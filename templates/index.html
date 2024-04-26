@@ -89,7 +89,8 @@
       {% block breadcrumb %}{% endblock breadcrumb %}
       {% block header %}
       <div class="page-header">
-        <h1>{{ config.title }} <small>{{ config.description }}</small></h1>
+
+        <h1><img src="http://www.avatarsinpixels.com/minipix/eyJNb3V0aCI6IjQiLCJTaG9lcyI6IjEiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkJlbHQiOiIxIiwiSmFja2V0IjoiMSIsIkhhaXIiOiI4Iiwic2tpblRvbmUiOiJlYWJlYTAiLCJleWVzVG9uZSI6IjAwMDAwMCIsIm1hc2tUb25lIjoiMDAwMDAwIiwiaGFpclRvbmUiOiI4NjU4MGYiLCJwYW50c1RvbmUiOiI3ZTExYWUiLCJiZWx0VG9uZSI6IjliMzIzMiIsImphY2tldFRvbmUiOiI3ZTExYWUifQ==/1/show.png"></img> {{ config.title }} <small>{{ config.description }}</small></h1>
       </div>
       {% endblock header %}
       {% block meta %}{% endblock meta %}
@@ -159,7 +160,7 @@
         <a href="https://gitlab.com/{{ config.extra.gitlab_user }}" target="_blank">GitLab</a>
         {% endif %}
         |
-        Built on <a href="https://getzola.org" target="_blank">Zola</a>
+        {# Built on <a href="https://getzola.org" target="_blank">Zola</a> #}
     </p>
   </footer>
 

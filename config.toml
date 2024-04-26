@@ -2,8 +2,8 @@ base_url = "https://zola386.netlify.app"
 # theme = "zola.386"
 
 default_language = "en"
-title = "ZOLA.386"
-description = "A port of the BOOTSTRA.386 theme."
+title = "abhatem.com"
+description = "Tinkering the night away"
 
 highlight_code = true
 compile_sass = true
@@ -17,8 +17,8 @@ taxonomies = [
 
 
 [extra]
-author = "José Lopes"
-year = "2020"
+author = "Abdullah Al-Hatem"
+year = "2024"
 
 keywords = "zola, theme, retro, hacking"
 theme_color = "#000084"
@@ -35,9 +35,9 @@ zola386_menu = [
 
 ### SOCIAL MEDIA
 image = "https://raw.githubusercontent.com/lopes/zola.386/master/screenshot.png"
-twitter_user = "lopesoj"
-linkedin_user = "jlopesjr"
-github_user = "lopes"
+twitter_user = "abhatem2689"
+linkedin_user = "abhatem"
+github_user = "abhatem"
 # gitlab_user = ""
 
 ### I18N WORDS
