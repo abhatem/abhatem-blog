@@ -14,3 +14,26 @@
 .navmargin {
 	margin-top: 20px;
 }
+
+.header-container {
+    display: flex; // This enables flexbox
+    align-items: center;       // Centers items vertically in the container
+
+    // justify-content: space-between; // This spreads out the flex items
+    // image width 50%
+    img {
+	width: 64px;
+	height: 64px;
+    }
+    // .flex-item img {
+    // 	width: 10%;
+    // }
+    .flex-item {
+        flex: 1; // This makes each flex item grow to fill the space
+        padding: 10px; // Adds some spacing inside the flex items
+        border: 1px solid #ccc; // Adds a border for visual separation
+        margin: 5px; // Adds some space between flex items
+    }
+}
+
+

@@ -20,19 +20,9 @@
   <meta itemprop="copyrightYear" content="{{ config.extra.year }}">
 
   <link rel="icon" href="{{ get_url(path="images/favicon.ico") }}" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="images/apple-icon-57x57.png") }}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ get_url(path="images/apple-icon-60x60.png") }}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ get_url(path="images/apple-icon-72x72.png") }}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ get_url(path="images/apple-icon-76x76.png") }}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ get_url(path="images/apple-icon-114x114.png") }}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ get_url(path="images/apple-icon-120x120.png") }}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ get_url(path="images/apple-icon-144x144.png") }}">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ get_url(path="images/apple-icon-152x152.png") }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="images/apple-icon-180x180.png") }}">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{{ get_url(path="images/android-icon-192x192.png") }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") }}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{ get_url(path="images/favicon-96x96.png") }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="{{ get_url(path="images/manifest.json") }}">
   <meta name="msapplication-TileColor" content="{{ config.extra.theme_color }}">
   <meta name="msapplication-TileImage" content="{{ get_url(path="images/ms-icon-144x144.png") }}">
@@ -88,9 +78,11 @@
     <header class="jumbotron subhead" id="overview">
       {% block breadcrumb %}{% endblock breadcrumb %}
       {% block header %}
-      <div class="page-header">
-
-        <h1><img src="http://www.avatarsinpixels.com/minipix/eyJNb3V0aCI6IjQiLCJTaG9lcyI6IjEiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkJlbHQiOiIxIiwiSmFja2V0IjoiMSIsIkhhaXIiOiI4Iiwic2tpblRvbmUiOiJlYWJlYTAiLCJleWVzVG9uZSI6IjAwMDAwMCIsIm1hc2tUb25lIjoiMDAwMDAwIiwiaGFpclRvbmUiOiI4NjU4MGYiLCJwYW50c1RvbmUiOiI3ZTExYWUiLCJiZWx0VG9uZSI6IjliMzIzMiIsImphY2tldFRvbmUiOiI3ZTExYWUifQ==/1/show.png"></img> {{ config.title }} <small>{{ config.description }}</small></h1>
+      <div class="header-container">
+	<img src="http://www.avatarsinpixels.com/minipix/eyJNb3V0aCI6IjQiLCJTaG9lcyI6IjEiLCJQYW50cyI6IjEiLCJUb3AiOiIxMCIsIkJlbHQiOiIxIiwiSmFja2V0IjoiMSIsIkhhaXIiOiI4Iiwic2tpblRvbmUiOiJlYWJlYTAiLCJleWVzVG9uZSI6IjAwMDAwMCIsIm1hc2tUb25lIjoiMDAwMDAwIiwiaGFpclRvbmUiOiI4NjU4MGYiLCJwYW50c1RvbmUiOiI3ZTExYWUiLCJiZWx0VG9uZSI6IjliMzIzMiIsImphY2tldFRvbmUiOiI3ZTExYWUifQ==/1/show.png"></img>
+	<div class="page-header">
+          <h1> {{ config.title }} <small>{{ config.description }}</small></h1>
+	</div>
       </div>
       {% endblock header %}
       {% block meta %}{% endblock meta %}

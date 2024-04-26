@@ -3,7 +3,7 @@ base_url = "https://zola386.netlify.app"
 
 default_language = "en"
 title = "abhatem.com"
-description = "Tinkering the night away"
+description = "Tinkering the night away 👨‍💻"
 
 highlight_code = true
 compile_sass = true
