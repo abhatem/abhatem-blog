@@ -1,4 +1,6 @@
-base_url = "https://vocal-pithivier-4737fd.netlify.app"
+# base_url = "https://vocal-pithivier-4737fd.netlify.app"
+base_url = "https://abhatem.com/"
+# base_url = ""
 # theme = "zola.386"
 
 default_language = "en"
@@ -11,8 +13,8 @@ generate_rss = true
 build_search_index = true
 
 taxonomies = [
-  {name="categories", rss=true},
-  {name="tags", rss=true},
+  { name = "categories", rss = true },
+  { name = "tags", rss = true },
 ]
 
 
@@ -23,10 +25,10 @@ year = "2024"
 keywords = "zola, theme, retro, hacking"
 theme_color = "#000084"
 zola386_menu = [
-  {path="", name="Home"},
-  {path="categories", name="Categories"},
-  {path="tags", name="Tags"},
-  {path="about", name="About"},
+  { path = "", name = "Home" },
+  { path = "categories", name = "Categories" },
+  { path = "tags", name = "Tags" },
+  { path = "about", name = "About" },
 ]
 
 ### THIRD PARTY
