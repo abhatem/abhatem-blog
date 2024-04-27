@@ -2,6 +2,7 @@
 zola
 public
 static/processed_images
+build
 
 # os trash
 .DS_Store

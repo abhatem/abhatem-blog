@@ -12,7 +12,7 @@ tags = ["emacs", "vscode", "IDE", "productivity"]
 [extra]
 comments = true
 lang = "pt"
-image = "/images/emacs_post.png"
+image = "emacs_post.png"
 +++
 
 # tbh I have to confess that while there are many things I like about both emacs and vs code, I have to confess that at the end it just came to a subjective feeling. Emacs just gave me a better feeling about writing code that I was missing with electron based vs code
