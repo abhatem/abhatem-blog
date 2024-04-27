@@ -3,7 +3,7 @@
   <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
   <p>{{ page.description }}</p>
   {% if page.extra.image %}
-  <img src="{{page.extra.image}}"></img>
+  <img src="{{get_url(path=page.extra.image)}}"></img>
   {% endif %}
   <dl class="dl-horizontal">
     <dt>{{ config.extra.label_date }}</dt>
@@ -11,7 +11,7 @@
     
     <dt>{{ config.extra.label_author }}</dt>
     <dd>
-      {% if page.extra.author %}
+      {% if page.extra.author %}c
         {{page.extra.author}}
       {% else %}
         {{config.extra.author}}
