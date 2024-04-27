@@ -1,13 +1,13 @@
 +++
 title = "Sem Nulla"
 description = "pharetra diam sit amet nisl suscipit"
-date = 2020-05-02
+# date = 2020-05-02
 draft = false
 slug = "sem-nulla"
 
 [taxonomies]
-categories = ["laoreet"]
-tags = ["risus", "platea", "nunc"]
+# categories = ["laoreet"]
+# tags = ["risus", "platea", "nunc"]
 
 [extra]
 comments = true
