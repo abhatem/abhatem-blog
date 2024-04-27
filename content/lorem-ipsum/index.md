@@ -6,8 +6,8 @@ draft = false
 slug = "lorem-ipsum"
 
 [taxonomies]
-# categories = ["pellentesque"]
-# tags = ["hac", "velit", "risus"]
+categories = ["test_category"]
+tags = ["test_tag"]
 
 [extra]
 comments = true

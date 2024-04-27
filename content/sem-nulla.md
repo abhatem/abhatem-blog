@@ -6,8 +6,8 @@ draft = false
 slug = "sem-nulla"
 
 [taxonomies]
-# categories = ["laoreet"]
-# tags = ["risus", "platea", "nunc"]
+categories = ["test_category"]
+tags = ["test_tag"]
 
 [extra]
 comments = true
