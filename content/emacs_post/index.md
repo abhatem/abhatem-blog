@@ -17,10 +17,8 @@ image = "emacs_post.png"
 
 # tbh I have to confess that while there are many things I like about both emacs and vs code, I have to confess that at the end it just came to a subjective feeling. Emacs just gave me a better feeling about writing code that I was missing with electron based vs code
 
-
 screenshot of me writing this post from inside emacs:
 ![screenshot](post_screenshot.png)
-<!-- {{ resize_image(path="emacs_post/post_screenshot.png", width=400, caption="Figure 1.") }} -->
 
 GitHub: [https://github.com/abhatem/emacs](https://github.com/abhatem/emacs)
 
