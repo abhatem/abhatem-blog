@@ -1,7 +1,7 @@
 +++
 title = "why I'm still using emacs in 2024"
 description = "after returning to emacs from using vscode for my thesis, it feels like home again"
-date = 2024-04-27
+#date = 2024-04-27
 draft = false
 slug = "emacs_vscode_journey"
 

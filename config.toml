@@ -7,7 +7,7 @@ default_language = "en"
 title = "abhatem.com"
 description = "Tinkering the night away 👨‍💻"
 
-highlight_code = true
+#highlight_code = true
 compile_sass = true
 generate_rss = true
 build_search_index = true
