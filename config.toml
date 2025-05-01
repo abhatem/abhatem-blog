@@ -23,7 +23,7 @@ author = "Abdullah Al-Hatem"
 year = "2025"
 
 keywords = "zola, theme, retro, hacking"
-theme_color = "#254022"
+theme_color = "#000084"
 zola386_menu = [
   { path = "", name = "Home" },
   { path = "categories", name = "Categories" },
