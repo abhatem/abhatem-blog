@@ -15,8 +15,12 @@ lang = "pt"
 image = "logo.png"
 +++
 
-## Bringing Robots to Life with Augmented Reality: My RoboLens Thesis Journey
+# Before you read you can see a demo video of the project [here](https://www.youtube.com/watch?v=J-mDiHP6sMA) :)
+<br>
+<br>
 
+## Bringing Robots to Life with Augmented Reality: My RoboLens Thesis Journey
+<br>
 You might have seen a video of me recently, perhaps on LinkedIn, looking a bit like a conductor waving my hands to guide a robotic arm. That wasn't just for show – it was the culmination of my Master's thesis project: **RoboLens: Visualization and Control of Web of Things Robotics using HoloLens**. It was a challenging, sometimes frustrating, but ultimately incredibly rewarding journey into the cutting edge of Augmented Reality (AR), Robotics, and the Web of Things (WoT). Here’s the story behind it.
 
 ### The Spark: Finding the Perfect Intersection
@@ -109,7 +113,7 @@ The project demonstrated a viable and intuitive way to control WoT enabled robot
 * Enhancing the waypoint system with features like saving/loading paths or associating specific actions (like gripping) with waypoints.
 * Integrating RoboLens into broader WoT platforms to control a wider variety of devices alongside robots.
 
-This project was a fantastic learning experience, pushing the boundaries of how we interact with robotic systems. I hope this gave you a good insight into the world of RoboLens!
+This project was a fantastic learning experience, pushing the boundaries of how we interact with robotic systems. It also lit the spark for having fun in building things back in me :). Especially after spending a lot of time in the theoretical world of my Master's program.
 
 *You can see a demo video of the project [here](https://www.youtube.com/watch?v=J-mDiHP6sMA).*
 
