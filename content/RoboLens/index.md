@@ -21,11 +21,11 @@ image = "logo.png"
 
 ## Bringing Robots to Life with Augmented Reality: My RoboLens Thesis Journey
 <br>
-You might have seen a video of me recently, perhaps on LinkedIn, looking a bit like a conductor waving my hands to guide a robotic arm. That wasn't just for show – it was the culmination of my Master's thesis project: **RoboLens: Visualization and Control of Web of Things Robotics using HoloLens**. It was a challenging, sometimes frustrating, but ultimately incredibly rewarding journey into the cutting edge of Augmented Reality (AR), Robotics, and the Web of Things (WoT). Here’s the story behind it.
+Finally getting around writing about my Master's thesis **RoboLens: Visualization and Control of Web of Things Robotics using HoloLens**. It was a challenging, sometimes frustrating, but ultimately incredibly rewarding journey into the cutting edge of Augmented Reality (AR), Robotics, and the Web of Things (WoT). Here’s the story behind it.
 
 ### The Spark: Finding the Perfect Intersection
 
-It all started, as many academic adventures do, with the search for a thesis topic. I was drawn to the potential of the Internet of Things (IoT) and Augmented Reality – two fields buzzing with innovation. Luckily, I stumbled upon an opportunity at the Professorship of Embedded Systems and Internet of Things at TU Munich that perfectly blended these interests.
+It all started, as many academic adventures do, with the search for a thesis topic. I was drawn to the potential of the Internet of Things (IoT) and Augmented Reality, two fields I throughly enjoy. Luckily, I stumbled upon an opportunity at the Professorship of Embedded Systems and Internet of Things at TU Munich that perfectly blended these interests.
 
 The initial idea, sparked during discussions with my supervisor, [Fady Salama](https://www.linkedin.com/in/fady-salama-2158031a4/), was ambitious: could we control a robot intuitively using the Microsoft HoloLens 2 headset, and importantly, could we integrate this control system into the broader framework of the Web of Things? The goal was to move beyond traditional, often complex, robot programming methods and create something more visual, interactive, and standardized.
 
