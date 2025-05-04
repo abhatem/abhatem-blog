@@ -19,7 +19,7 @@ image = "logo.png"
 <br>
 <br>
 
-## Bringing Robots to Life with Augmented Reality: My RoboLens Thesis Journey
+# Bringing Robots to Life with Augmented Reality: My RoboLens Thesis Journey
 <br>
 Finally getting around writing about my Master's thesis **RoboLens: Visualization and Control of Web of Things Robotics using HoloLens**. It was a challenging, sometimes frustrating, but ultimately incredibly rewarding journey into the cutting edge of Augmented Reality (AR), Robotics, and the Web of Things (WoT). Here’s the story behind it.
 
