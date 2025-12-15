@@ -116,7 +116,7 @@ The project demonstrated a viable and intuitive way to control WoT enabled robot
 This project was a fantastic learning experience, pushing the boundaries of how we interact with robotic systems. It also lit the spark for having fun in building things back in me :). Especially after spending a lot of time in the theoretical world of my Master's program.
 
 *You can see a demo video of the project [here](https://www.youtube.com/watch?v=J-mDiHP6sMA).*
-
+{{ youtube(id="J-mDiHP6sMA") }}
 Let me know what you think!
 
 Finally, a huge thank you to my thesis supervisor, [Fady Salama](https://www.linkedin.com/in/fady-salama-2158031a4/), for his invaluable guidance and support throughout this project.

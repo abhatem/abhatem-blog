@@ -9,7 +9,7 @@ description = "Tinkering the night away 👨‍💻"
 
 #highlight_code = true
 compile_sass = true
-generate_rss = true
+#generate_rss = true
 build_search_index = true
 
 taxonomies = [
@@ -17,6 +17,9 @@ taxonomies = [
   { name = "tags", rss = true },
 ]
 
+[markdown]
+highlight_code = true
+highlight_theme = "kronuz"
 
 [extra]
 author = "Abdullah Al-Hatem"
