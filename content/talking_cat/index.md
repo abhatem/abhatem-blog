@@ -73,6 +73,7 @@ It looked much better, for about five seconds.
 ### Attempt 3: The Stuttering Nightmare
 Suddenly, the audio started glitching and stuttering. It sounded like a corrupted robot. The problem was that analyzing the audio and moving the servo (which uses `delay()`) takes time. The ESP32 was so busy moving the motor that it couldn't feed audio data to the amplifier fast enough, causing the buffer to run dry.
 {{ youtube(id="ibPCroP2rSs") }}
+
 ### The Fix: Multithreading
 I remembered the ESP32 is a dual-core microcontroller (I think it said somewhere in the Amazon description when I bought it). By default, Arduino jams everything onto one core.
 
@@ -94,6 +95,7 @@ xTaskCreatePinnedToCore(
 
 Once I pinned the tasks to separate cores, the stutter vanished instantly. The setup could finally output smooth noise.
 {{ youtube(id="tQ8SOMY6JGc") }}
+
 ## Skeleton Surgery
 now that I had the electronics working, I had to figure out how to fit them into the skeleton and make the mouth move when audio is played. I started with trying to see what the best way to move the jaw was. Fiddling around, I figured that a paperclip bent into a hook shape was actually ideal since it was flexible engough for me to put into shape and strong enough to move the jaw without bending. 
 
@@ -102,8 +104,10 @@ I thought that making a whole in the jaw and passing the paperclip through it wo
 After the epoxy dried I could move it but I realized the head swivel was a bit annoying when moving and made things slip when it rotated {{ youtube(id="S20OLJxf2OA") }}. 
 So I ended up adding some epoxy on it too to stop it from moving. A bit of cabling later and this is how it looked like {{ youtube(id="sK52k0PhnD4") }}
 With the halloween party starting in a couple hours, I didn't have time for cleaner wiring so I just slapped a black cloth on top and called it a day
+
 ## Final Video
 {{ youtube(id="iIqy-yb8aNA") }}
+
 ## Code
 Here is the final code that runs on the skeleton. It uses the `ESP32-A2DP` and `AudioTools` libraries to handle the heavy lifting of the audio stream, while I use FreeRTOS to split the workload between the two CPU cores.
 
