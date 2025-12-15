@@ -103,8 +103,7 @@ After the epoxy dried I could move it but I realized the head swivel was a bit a
 So I ended up adding some epoxy on it too to stop it from moving. A bit of cabling later and this is how it looked like {{ youtube(id="sK52k0PhnD4") }}
 With the halloween party starting in a couple hours, I didn't have time for cleaner wiring so I just slapped a black cloth on top and called it a day
 ## Final Video
-[todo : final video of it singing]
-
+{{ youtube(id="iIqy-yb8aNA") }}
 ## Code
 Here is the final code that runs on the skeleton. It uses the `ESP32-A2DP` and `AudioTools` libraries to handle the heavy lifting of the audio stream, while I use FreeRTOS to split the workload between the two CPU cores.
 
