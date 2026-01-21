@@ -6,3 +6,6 @@ build
 
 # os trash
 .DS_Store
+
+# Ignore backup images
+content/.original_images/

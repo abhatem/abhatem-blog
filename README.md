@@ -31,3 +31,34 @@ To run this site locally, you need to have Zola installed.
     zola build
     ```
     The static files will be generated in the `public` directory.
+
+## Image Compression Script
+
+To compress images in `content/` and backup originals, run:
+
+```bash
+./compress_images.sh
+```
+
+- Originals are backed up to `content/.original_images/` (overwritten each run).
+- Compressed images replace originals in place.
+- Backup folder is excluded from git and Netlify builds.
+
+### Requirements
+- `jpegoptim` (for JPEGs)
+- `optipng` (for PNGs)
+
+Install on Ubuntu/Debian:
+```bash
+sudo apt-get install jpegoptim optipng
+```
+
+### Optional: Pre-commit Hook
+To run compression before each commit, symlink the script:
+```bash
+ln -s ../../compress_images.sh .git/hooks/pre-commit
+```
+
+Remove the symlink to disable.
+
+---
