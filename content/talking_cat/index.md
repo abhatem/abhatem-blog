@@ -11,11 +11,12 @@ tags = ["nodemcu", "iot", "projects", "showing off"]
 [extra]
 comments = true
 lang = "en"
-image = "skeleton_on_couch.png" 
+image = "skeleton_on_couch.PNG" 
 +++
 
 # I built a talking cat!
 While walking around Gieselarstr. in Munich and passing flying tiger something caugth my eye, a cat skeleton being sold as hallowing decoration. Looking closer at it, it seemed to have a mouth that could be opened and closed and a movable head. Looking at it, it was begging for more life to be put into it. So I bought it and started thinking about how to make it talk.
+![skeleton on couch](skeleton_on_couch.PNG)
 
 ## Components
 Thought I'd get this out of the way first, the components that I ended up using for this project in the end:
