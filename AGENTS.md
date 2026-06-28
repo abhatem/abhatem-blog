@@ -14,7 +14,7 @@ structural.
 
 | Concern        | Choice                                                                 |
 |----------------|------------------------------------------------------------------------|
-| Generator      | Zola (Netlify pins `ZOLA_VERSION = 0.14.0` in `netlify.toml`)           |
+| Generator      | Zola (Netlify pins `ZOLA_VERSION = 0.22.1` in `netlify.toml`; matches `brew install zola`) |
 | Theme          | Custom, derived from the retro [zola.386](https://github.com/lopes/zola.386) theme by lopes |
 | CSS            | Bootstrap 2-era (`static/css/bootstrap*.css`) + `sass/site.scss` (compiled by Zola → `site.css`) |
 | JS             | jQuery + Bootstrap 2 plugins + Zola search (`elasticlunr`)              |
@@ -23,8 +23,11 @@ structural.
 | Comments       | Disqus, **disabled** (config `disqus` is commented out); per-page `extra.comments` flag exists but is inert |
 
 Local dev: `zola serve` → http://127.0.0.1:1111. Build: `zola build` → `public/`
-(gitignored). If your local Zola is newer than 0.14, most things work, but
-verify against 0.14 behavior before relying on newer features.
+(gitignored). Local and Netlify are both on **0.22.x** — keep them in sync if you
+bump one. Syntax highlighting uses the 0.22+ "Giallo" engine, configured under
+`[markdown.highlighting]` in `config.toml` (`theme = "monokai"`, `style = "inline"`);
+a theme is **required** in 0.22+, and the pre-0.22 `highlight_code` / `highlight_theme`
+keys (and the old `kronuz` theme) no longer exist.
 
 ---
 
@@ -33,7 +36,7 @@ verify against 0.14 behavior before relying on newer features.
 ```
 .
 ├── config.toml            # Site config: base_url, taxonomies, nav menu, social, i18n labels
-├── netlify.toml           # Netlify build + (currently no) redirects; pins Zola 0.14.0
+├── netlify.toml           # Netlify build + (currently no) redirects; pins Zola 0.22.1
 ├── theme.toml             # Theme metadata (cosmetic)
 ├── compress_images.sh     # Optional image-compression helper (jpegoptim/optipng)
 ├── content/               # All Markdown content (see §3)
