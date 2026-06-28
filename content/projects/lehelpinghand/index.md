@@ -4,6 +4,7 @@ description = "LeHelpingHand is a robotic helping hand for soldering, built duri
 date = 2025-06-17
 draft = false
 slug = "lehelpinghand"
+aliases = ["/lehelpinghand/"]
 
 [taxonomies]
 categories = ["projects", "hackathon"]

@@ -4,6 +4,7 @@ description = "Do I really need a tiling window manager, or do I just want the s
 date = 2024-05-15
 draft = false
 slug = "window_managers"
+aliases = ["/window-managers/"]
 
 [taxonomies]
 categories = ["takes"]

@@ -4,6 +4,7 @@ description = "RoboLens is a way to control robots using HoloLens based on WoT (
 date = 2025-05-01
 draft = false
 slug = "robolens"
+aliases = ["/robolens/"]
 
 [taxonomies]
 categories = ["projects"]

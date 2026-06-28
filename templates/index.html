@@ -93,11 +93,24 @@
 
       <div class="span9 bs-docs-sidebar">
       {% block main %}
-        {% for page in paginator.pages %}
+        {% set projects = get_section(path="projects/_index.md") %}
+        {% set blog = get_section(path="blog/_index.md") %}
+
+        <div class="page-header">
+          <h1>Projects <small><a href="{{ config.base_url }}/projects">see all &rarr;</a></small></h1>
+        </div>
+        {% for page in projects.pages | slice(end=3) %}
           {{ macro::post_max(page=page) }}
         {% endfor %}
 
-        {{ macro::paginator(ref=paginator, extra=config.extra) }}
+        <div class="page-header">
+          <h1>Blog <small><a href="{{ config.base_url }}/blog">see all &rarr;</a></small></h1>
+        </div>
+        <ul>
+          {% for page in blog.pages | slice(end=6) %}
+            <li>{{ macro::post_min(page=page) }}</li>
+          {% endfor %}
+        </ul>
       {% endblock main %}
       </div> <!-- span9 -->
 

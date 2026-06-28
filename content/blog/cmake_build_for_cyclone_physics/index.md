@@ -4,6 +4,7 @@ description = "brining the Cyclone Physics Engine to the 21st century with a CMa
 date = 2024-08-29
 draft = false
 slug = "cmake_build_for_cyclone_physics"
+aliases = ["/cmake-build-for-cyclone-physics/"]
 
 [taxonomies]
 categories = ["showing off"]
