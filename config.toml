@@ -18,8 +18,12 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = true
-highlight_theme = "kronuz"
+[markdown.highlighting]
+# Syntax highlighting was rewritten in Zola 0.22 (new "Giallo" engine).
+# A theme is now required; the old "kronuz" theme no longer exists.
+# Swap for any bundled theme (dracula, nord, tokyo-night, synthwave-84, ...).
+theme = "monokai"
+style = "inline"
 
 [extra]
 author = "Abdullah Al-Hatem"
