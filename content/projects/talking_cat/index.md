@@ -3,6 +3,7 @@ title = "I Built a Talking Cat with NodeMCU"
 description = "A project about a talking cat I built with nodemcu, speakers and a servo."
 date = 2025-11-20
 slug = "talking-cat"
+aliases = ["/talking-cat/"]
 
 [taxonomies]
 categories = ["projects"]

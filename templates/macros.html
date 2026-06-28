@@ -3,7 +3,11 @@
   <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
   <p>{{ page.description }}</p>
   {% if page.extra.image %}
-  <img src="{{get_url(path=page.slug)}}/{{page.extra.image}}"></img>
+    {% if page.extra.image is containing("://") %}
+    <img src="{{ page.extra.image }}"></img>
+    {% else %}
+    <img src="{{ page.permalink | safe }}{{ page.extra.image }}"></img>
+    {% endif %}
   {% endif %}
   <dl class="dl-horizontal">
     <dt>{{ config.extra.label_date }}</dt>
