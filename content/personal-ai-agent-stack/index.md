@@ -12,6 +12,7 @@ tags = ["ai", "local-ai", "hermes", "llm", "qwen", "openai", "gpu"]
 [extra]
 comments = true
 lang = "en"
+image = "hermes-agent.jpg"
 +++
 
 # My AI Agent Setup: Local Models, Cloud APIs, and a Lot of Tinkering
@@ -27,6 +28,10 @@ I wanted something more useful than a chatbot. The idea was to have a personal a
 That is where Hermes Agent comes in. It is the part that connects the model to everything else: terminal commands, files, browser tools, MCP servers, memory, scheduled tasks, and messaging platforms.
 
 The model is replaceable. Hermes is the thing that turns it into an assistant.
+
+![Hermes running through Telegram](telegram-hermes.jpg)
+
+The screenshot above is what this looks like from my phone: I can send a request in Telegram, Hermes can run a terminal command on my desktop, and the result comes back in the same conversation.
 
 My main machine has an RTX 5070 Ti with 16 GB of VRAM and 32 GB of RAM. That is enough for interesting local models, but not enough to load every model entirely into VRAM. So naturally I ended up spending a lot of time thinking about MoE models and offloading expert weights to the CPU.
 
