@@ -4,9 +4,10 @@ description = "What happened when I tried to build a useful personal AI agent ar
 date = 2026-08-01
 draft = false
 slug = "personal-ai-agent-stack"
+aliases = ["/blog/personal-ai-agent-stack/"]
 
 [taxonomies]
-categories = ["tech"]
+categories = ["projects"]
 tags = ["ai", "local-ai", "hermes", "llm", "qwen", "openai", "gpu"]
 
 [extra]
