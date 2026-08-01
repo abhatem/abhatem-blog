@@ -91,18 +91,54 @@
     
     <div class="row-fluid">
 
-      <div class="span9 bs-docs-sidebar">
+      <div class="span8 bs-docs-sidebar">
       {% block main %}
-        {% for page in paginator.pages %}
+        {% set projects = get_section(path="projects/_index.md") %}
+        {% set blog = get_section(path="blog/_index.md") %}
+
+        <div class="page-header">
+          <h1>Projects <small><a href="{{ config.base_url }}/projects">see all &rarr;</a></small></h1>
+        </div>
+        {% for page in projects.pages | slice(end=3) %}
           {{ macro::post_max(page=page) }}
         {% endfor %}
 
-        {{ macro::paginator(ref=paginator, extra=config.extra) }}
+        <div class="page-header">
+          <h1>Blog <small><a href="{{ config.base_url }}/blog">see all &rarr;</a></small></h1>
+        </div>
+        <ul>
+          {% for page in blog.pages | slice(end=6) %}
+            <li>{{ macro::post_min(page=page) }}</li>
+          {% endfor %}
+        </ul>
       {% endblock main %}
       </div> <!-- span9 -->
 
-      <div class="span3 bs-docs-sidebar">
+      <div class="span4 bs-docs-sidebar">
       {% block sidebar %}
+        {% set blog = get_section(path="blog/_index.md") %}
+        <h1>Latest Blog Posts</h1>
+        <ul class="nav nav-list bs-docs-sidenav sidebar-blog-posts">
+          {% for page in blog.pages | slice(end=4) %}
+          <li class="blog-post-card">
+            {% if page.extra.image %}
+              {% if page.extra.image is containing("://") %}
+                <img class="blog-post-thumb" src="{{ page.extra.image }}" alt="">
+              {% else %}
+                <img class="blog-post-thumb" src="{{ page.permalink | safe }}{{ page.extra.image }}" alt="">
+              {% endif %}
+            {% else %}
+              <img class="blog-post-thumb" src="{{ get_url(path='images/blog-placeholder.svg') }}" alt="">
+            {% endif %}
+            <div class="blog-post-info">
+              <a href="{{ page.permalink }}">{{ page.title }}</a>
+              <span class="blog-post-date">{{ page.date | date(format="%b %Y") }}</span>
+            </div>
+          </li>
+          {% endfor %}
+          <li><a href="{{ config.base_url }}/blog"><em>see all &rarr;</em></a></li>
+        </ul>
+        <p></p>
         <h1>Search</h1>
         <form class="form-search">
           <input id="search" type="text" class="input-large search-query">

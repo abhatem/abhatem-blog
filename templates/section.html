@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block title %}{{ config.title }} - {{ section.title }}{% endblock title %}
+
+{% block header %}
+<div class="page-header">
+  <h1>{{ section.title }} <small>{{ section.description }}</small></h1>
+</div>
+{% endblock header %}
+
+{% block main %}
+  {% for page in paginator.pages %}
+    {{ macro::post_max(page=page) }}
+  {% endfor %}
+
+  {{ macro::paginator(ref=paginator, extra=config.extra) }}
+{% endblock main %}

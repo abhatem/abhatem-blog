@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 42">
+  <rect width="56" height="42" fill="#1a1a8e"/>
+  <!-- document body -->
+  <rect x="13" y="4" width="22" height="28" rx="1" fill="#2a2a9e" stroke="#4a4abe" stroke-width="1"/>
+  <!-- dog-ear fold -->
+  <polygon points="29,4 35,4 35,10 29,10" fill="#1a1a8e" stroke="#4a4abe" stroke-width="1"/>
+  <!-- text lines -->
+  <line x1="17" y1="14" x2="31" y2="14" stroke="#00cccc" stroke-width="1.5" stroke-linecap="square"/>
+  <line x1="17" y1="19" x2="31" y2="19" stroke="#00cccc" stroke-width="1.5" stroke-linecap="square"/>
+  <line x1="17" y1="24" x2="26" y2="24" stroke="#00cccc" stroke-width="1.5" stroke-linecap="square"/>
+  <!-- pencil -->
+  <rect x="34" y="22" width="5" height="13" rx="0" fill="#ccaa00" transform="rotate(-40 36 28)"/>
+  <polygon points="34,33 39,33 36.5,38" fill="#ffdd44" transform="rotate(-40 36 28)"/>
+  <line x1="34" y1="23" x2="39" y2="23" stroke="#886600" stroke-width="1" transform="rotate(-40 36 28)"/>
+</svg>

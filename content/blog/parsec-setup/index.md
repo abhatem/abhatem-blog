@@ -4,6 +4,7 @@ description = "A guide to setting up remote gaming and work using Parsec with a 
 date = 2025-12-23
 draft = false
 slug = "parsec-setup"
+aliases = ["/parsec-setup/"]
 
 [taxonomies]
 categories = ["tech"]

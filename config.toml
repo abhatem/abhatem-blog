@@ -18,8 +18,12 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = true
-highlight_theme = "kronuz"
+[markdown.highlighting]
+# Syntax highlighting was rewritten in Zola 0.22 (new "Giallo" engine).
+# A theme is now required; the old "kronuz" theme no longer exists.
+# Swap for any bundled theme (dracula, nord, tokyo-night, synthwave-84, ...).
+theme = "monokai"
+style = "inline"
 
 [extra]
 author = "Abdullah Al-Hatem"
@@ -29,6 +33,8 @@ keywords = "zola, theme, retro, hacking"
 theme_color = "#000084"
 zola386_menu = [
   { path = "", name = "Home" },
+  { path = "projects", name = "Projects" },
+  { path = "blog", name = "Blog" },
   { path = "categories", name = "Categories" },
   { path = "tags", name = "Tags" },
   { path = "about", name = "About" },
